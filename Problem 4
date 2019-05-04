@@ -1,0 +1,26 @@
+// Experiment 2 -Problem 4
+#include <iostream>
+
+using namespace std;
+
+int main()
+{  
+	float first, second, third;
+    cout << "Input Three Numbers: ";
+    cin >> first >> second >> third;
+
+    if(first >= second && first >= third)
+{
+        cout << "Largest number: " << first;
+}
+    if(second >= first && second >= third)
+{
+        cout << "Largest number: " << second;
+}
+    if(third >= first && third >= second)
+{
+        cout << "Largest number: " << third;
+}
+	_getch()
+    return 0;
+	}
