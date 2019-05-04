@@ -1,0 +1,60 @@
+#include <iostream>
+#include <conio.h>
+#include <string>
+
+using namespace std;
+
+int main()
+ {
+ 	string package;
+ 	float hours;
+ 	float Cost;
+ 	cout << "Choose package A,B, or C ";
+ 	cin >> package;
+
+ if ((package == "A") || (package == "B") || (package == "C"))
+  {
+ cout << "The number of hours: ";
+ cin >> hours;
+
+ if (hours <= 9999)
+  {
+if (package == "A") 
+{
+if (hours > 10)
+ {
+Cost = 995 + (hours - 10) * 2;
+}
+ else 
+ {
+Cost = 995;
+}
+
+} else if (package == "B")
+ {
+if (time > 20)
+ {
+Cost = 1495 + (hours - 20) * 1;
+} else 
+{
+Cost = 1495;
+}
+
+} else 
+{
+Cost = 1995;
+}
+ } else
+  {
+cout << "Number of hours does not exist!";
+ }
+ } else
+  {
+ cout << "Package does not exist!";
+}
+	cout << "Total Price =" << Cost;
+} 
+	_getch()
+	return 0;
+
+}
