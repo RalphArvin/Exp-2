@@ -1,0 +1,33 @@
+//Experiment 2 - Problem 2
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+
+int main()
+
+{	
+	int gallons;
+	float unpaid, totalprice;
+	const float waterdemand = 35, consumption = 1.10; 
+	cout << "Inpute unpaid balance:"; cin >> unpaid; 
+	cout << "Gallons taken in the recent and previous month:"; cin >>	gallons;
+		
+	if (unpaid < 0 || gallons < 0 ) 
+	cout << "Invalid Amount !" << endl;
+
+	else if (unpaid > 0) 
+		{
+			totalprice = waterdemand + (consumption * gallons) + unpaid + 20;
+			cout << "Total Price:" << totalprice << endl;
+		}
+
+	else 
+		{
+			totalprice = waterdemand + (consumption * gallons);
+			cout << "Total Price:" << totalprice << endl;
+		}
+
+	_getch();
+	return 0;
+}
